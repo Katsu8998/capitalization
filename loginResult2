@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+p{
+font-size:16px;
+color:red;
+}
+</style>
+<meta charset="UTF-8">
+<title>Capitalization</title>
+</head>
+<body>
+<p>Fail to Login<br>
+You put something in the textbox except for numbers.
+Please Enter Numbers in the textbox.</p>
+<a href="/Finance/Top.jsp">TOP</a>
+</body>
+</html>
