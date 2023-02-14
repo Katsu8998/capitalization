@@ -1,0 +1,25 @@
+package model;
+
+import java.io.Serializable;
+
+public class User implements Serializable{
+	private String name;
+	private String pass;
+
+	public User(){}
+	public User(String name, String pass){
+		this.name = name;
+		this.pass = pass;
+	}
+	public String getName() {
+		return name;
+	}
+	public String getPass() {
+		return pass;
+	}
+
+	//購入金額/購入価格=保有株数 $600万/$0.5=1200万株
+	//保有株数*現在価格=時価 $1200*$0.58=696万
+	//96万ドルの儲けが生まれた。
+
+}
