@@ -1,0 +1,22 @@
+package model;
+
+import java.util.List;
+
+public class StockCalucLogic {
+	//購入金額/購入価格=保有株数 $600万/$0.5=1200万株
+	//保有株数*現在価格=時価 $1200*$0.58=696万
+	//96万ドルの儲けが生まれた。
+	public List<Stock> StockCaluc(Stock stock) {
+		int total = stock.getTotalAmount();
+		int buying = stock.getFirstPurchase();
+		int current = stock.getNumStock();
+
+		int holding = total * buying;
+		int capital = holding * current;
+
+		List<Stock> stockList = (List<Stock>) new Stock(holding, capital);
+		return stockList;
+
+	}
+
+}
