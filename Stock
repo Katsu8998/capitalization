@@ -1,0 +1,32 @@
+package model;
+
+import java.io.Serializable;
+
+public class Stock implements Serializable {
+	private int totalAmount;
+	private int firstPurchase;
+	private int numStock;
+
+	public Stock() {
+	}
+
+	public Stock(int totalAmount, int firstPurchase, int numStock) {
+		this.totalAmount = totalAmount;
+		this.firstPurchase = firstPurchase;
+		this.numStock = numStock;
+	}
+
+	public int getTotalAmount() {
+		return totalAmount;
+	}
+
+	public int getFirstPurchase() {
+		return firstPurchase;
+	}
+
+	public int getNumStock() {
+		return numStock;
+	}
+
+}
+
