@@ -1,0 +1,26 @@
+package model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class LoginLogic {
+	public boolean execute(User user) {
+		try {
+				//数字以外が入力された場合、false
+				int pass = Integer.parseInt(user.getPass());
+				List<Integer> list = toArrayReverseOrder(pass);
+				return true;
+		} catch (Exception e) {
+			return false;
+		}
+	}
+
+	public List<Integer> toArrayReverseOrder(int i) {
+		List<Integer> list = new ArrayList<>();
+		while (i != 0) { // 10で割った結果が0になったら終了する
+			list.add(i % 10); // 1桁目を取得する
+			i /= 10; // 1/10にする
+		}
+		return list;
+	}
+}
