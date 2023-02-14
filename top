@@ -1,0 +1,42 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.body-section{
+ width: 100%;
+    height: 350px;
+
+
+    background: center/50% no-repeat url();
+    background-size: cover;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: 40px;
+    color: #8826ff;
+    font-weight: 700;
+    text-align: center;
+}
+}
+</style>
+<meta charset="UTF-8">
+<title>market capitalization</title>
+</head>
+<body>
+  <section class="body-section">
+<h1>Calculate How Much Your Favorite Compay Is Now.</h1>
+    </section>
+<form action = "/Finance/Login" method ="post">
+Name: <input type="text" name="name"><br>
+Passowrd: <input type="password" name="pass"placeholder="please put numbers"><br>
+<input type="submit" value="login">
+</form>
+</body>
+</html>
