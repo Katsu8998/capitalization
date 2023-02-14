@@ -6,8 +6,26 @@ public class Stock implements Serializable {
 	private int totalAmount;
 	private int firstPurchase;
 	private int numStock;
+	private int holding;
+	private int  capital;
 
 	public Stock() {
+	}
+
+	public int getHolding() {
+		return holding;
+	}
+
+	public void setHolding(int holding) {
+		this.holding = holding;
+	}
+
+	public int getCapital() {
+		return capital;
+	}
+
+	public void setCapital(int capital) {
+		this.capital = capital;
 	}
 
 	public Stock(int totalAmount, int firstPurchase, int numStock) {
@@ -15,6 +33,26 @@ public class Stock implements Serializable {
 		this.firstPurchase = firstPurchase;
 		this.numStock = numStock;
 	}
+
+	public Stock(int holding, int capital) {
+		this.holding =holding;
+		this.capital = capital;
+
+	}
+
+	public void setTotalAmount(int totalAmount) {
+		this.totalAmount = totalAmount;
+	}
+
+	public void setFirstPurchase(int firstPurchase) {
+		this.firstPurchase = firstPurchase;
+	}
+
+	public void setNumStock(int numStock) {
+		this.numStock = numStock;
+	}
+
+
 
 	public int getTotalAmount() {
 		return totalAmount;
@@ -29,4 +67,3 @@ public class Stock implements Serializable {
 	}
 
 }
-
